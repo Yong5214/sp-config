@@ -1,7 +1,12 @@
 spring:
   application:
     name: zuul
-    
+  rabbitmq:
+    host: 192.168.247.132
+    port: 5672
+    username: admin
+    password: admin
+      
 server:
   port: 3001
   
@@ -38,8 +43,3 @@ management:
       exposure:
         include: hystrix.stream 
         
-rabbitmq:
-    host: 192.168.247.132
-    port: 5672
-    username: admin
-    password: admin
